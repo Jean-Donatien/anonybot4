@@ -9,7 +9,9 @@ bot.on("message", message => {
 
 bot.on("message", message => {
   if (message.content === "repete un peu pour voir !") {
-    message.reply("message");
+     var prefix = "!bot";
+     const messageSlice = message.content.slice(prefix.lenght).trim();
+     message.channel.send(messageSlice)
   }
 });
 
