@@ -10,7 +10,7 @@ bot.on("message", message => {
 bot.on("message", message => {
      var prefix = "!bot";
      const messageSlice = message.content.slice(prefix.lenght).trim();
-     message.channel.send(messageSlice)
+     message.reply(messageSlice)
 });
 
 //bot.channels.get('361975566565638146').sendMessage(message)
