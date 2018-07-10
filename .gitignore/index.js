@@ -7,9 +7,12 @@ bot.on("message", message => {
   }
 });
 
-bot.on("message", function(message) {
-  bot.channels.get('361975566565638146').sendMessage(message)
+bot.on("message", message => {
+  if (message.content === "repete un peu pour voir !") {
+    message.reply(message);
+  }
 });
 
+//bot.channels.get('361975566565638146').sendMessage(message)
 
 bot.login('NDY2MjcyMTkyODg0MTEzNDA4.DiZpWg.93nl-a6JYBUJLrAypujisqPXzQw')
