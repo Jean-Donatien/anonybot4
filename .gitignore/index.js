@@ -9,7 +9,7 @@ bot.on("message", message => {
 
 bot.on("message", message => {
   if (message.content === "repete un peu pour voir !") {
-    message.reply(message);
+    message.reply("message");
   }
 });
 
